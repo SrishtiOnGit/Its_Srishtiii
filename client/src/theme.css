@@ -1,0 +1,29 @@
+@import "tailwindcss";
+/* Dark Theme */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111014;
+  --surface: #211c24;
+  --text: #f9f4f8;
+  --muted: #b8aab5;
+  --accent: #f0a6ca;
+  --border: #39313a;
+}
+/* Light Theme */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fff8fc;
+  --surface: #f5e8f0;
+  --text: #30232d;
+  --muted: #786575;
+  --accent: #c05c91;
+  --border: #ebdce6;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
+}
