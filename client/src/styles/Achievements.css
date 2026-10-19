@@ -1,0 +1,29 @@
+.achieved {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.achieved-things {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.achieved-things span {
+  color: var(--accent);
+}
+
+.achieved-description {
+  margin: 0;
+  color: var(--text);
+  font-size: 2rem;
+  line-height: 1.8;
+  text-align: left;
+}
