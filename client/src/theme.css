@@ -8,6 +8,9 @@
   --muted: #b8aab5;
   --accent: #f0a6ca;
   --border: #39313a;
+  --hover: #c04486;
+  --button: white;
+  --text-2: black;
 }
 /* Light Theme */
 [data-theme="light"] {
@@ -18,6 +21,9 @@
   --muted: #786575;
   --accent: #c05c91;
   --border: #ebdce6;
+  --hover: #f0a6ca;
+  --button: black;
+  --text-2: white;
 }
 
 body {
@@ -26,4 +32,11 @@ body {
   transition:
     background-color 250ms ease,
     color 250ms ease;
+  cursor: url("./assets/heart.svg"), auto;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: url("./assets/heart.svg"), pointer;
 }

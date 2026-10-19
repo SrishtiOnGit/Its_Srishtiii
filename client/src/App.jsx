@@ -1,11 +1,26 @@
-import "./App.css";
-import ThemeToggler from "./components/ThemeToggler";
+import Hero from "./components/hero";
+import Navbar from "./components/Navbar";
+import AboutMe from "./pages/AboutMe";
+import { Routes, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+
+function HomePage() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
+}
 
 function App() {
   return (
     <>
-      <ThemeToggler />
-      <h1>Its_Srishtiii</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }

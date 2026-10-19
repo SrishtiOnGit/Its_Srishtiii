@@ -1,0 +1,21 @@
+.nav-link {
+  color: var(--muted);
+  transition: color 300ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--hover);
+  transition: width 300ms ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
