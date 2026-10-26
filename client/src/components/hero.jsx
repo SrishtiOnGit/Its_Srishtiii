@@ -29,7 +29,7 @@ const Hero = () => {
       <button
         className=" text-xl  py-2 px-4 rounded mt-6 ml-7 mr-2.5 cursor-pointer"
         style={{ backgroundColor: "var(--accent)", color: "var(--text-2)" }}
-        onClick={() => navigate("/projects")}
+        onClick={() => navigate("/experience")}
       >
         My Experience
       </button>
